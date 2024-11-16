@@ -14,7 +14,7 @@ pipeline {
         stage("Build"){
             steps {
                 dir("java-hello-world-with-maven") {
-                    sh "mvn clean install"
+                    sh "mvn test"
                 }
             }
         }
